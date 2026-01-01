@@ -2,36 +2,39 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Product Page</title>
+  <title>Plum Brownie Cake</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="product-container">
+  <div class="product-card">
 
-    <!-- Product Image -->
-    <div class="product-image">
-      <img src="images/headphones.jpg" alt="Wireless Headphones">
-
+    <div class="image-section">
+      <img src="./images/plum-brownie-cake.png" alt="Plum Brownie Cake">
     </div>
 
-    <!-- Product Details -->
-    <div class="product-details">
-      <h1 class="product-title">Wireless Headphones</h1>
-      <p class="product-price">₹2,999</p>
-      <p style="margin-bottom: 15px;">High-quality wireless headphones with deep bass and long battery life.</p>
+    <div class="details-section">
+      <h1>Plum Brownie Cake</h1>
 
+      <p class="price">$99</p>
 
-      <!-- Quantity Selector -->
-      <div class="quantity-box">
-        <button>-</button>
-        <span>1</span>
-        <button>+</button>
-      </div>
+      <p class="description">
+        Rich, fudgy chocolate brownie infused with a hint of plum flavor,
+        freshly baked to perfection. A delightful treat for dessert lovers.
+      </p>
 
-      <!-- Add to Cart -->
-      <button class="add-to-cart">Add to Cart</button>
-    </div>
+      <div class="action-row">
+  <div class="quantity">
+    <button onclick="decreaseQty()">−</button>
+    <span id="qty">1</span>
+    <button onclick="increaseQty()">+</button>
+  </div>
+
+  <button class="add-cart" onclick="addToCart()">
+    Add to Cart
+  </button>
+</div>
+
 
   </div>
 
